@@ -4,32 +4,102 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/roboto+mono?query=robo">
     <title>index</title>
-    <script type="module" crossorigin src="/week5/assets/main-71c30259.js"></script>
-    <link rel="stylesheet" href="/week5/assets/main-accf464b.css">
+    <script type="module" crossorigin src="/week5/assets/main-fadb1431.js"></script>
+    <link rel="stylesheet" href="/week5/assets/main-997e92a7.css">
   </head>
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
+    <div class="d-flex">
+    
+<nav class="navbar bg-light d-flex flex-column p-4">
+    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/week5/logo-ANSWER.svg" alt="" class="img-fluid mb-4">
+    <a href="#" class="link-dark d-flex fw-bold mb-3">
+        <span class="material-icons text-dark me-3">
+            assessment
+            </span>
+        Dashboard
+    </a>
+    <a href="#" class="link-dark d-flex fw-bold mb-3">
+        <span class="material-icons text-dark me-3">
+            question_answer
+            </span>
+            Question
+    </a>
+    <a href="#" class="link-dark d-flex fw-bold mb-3">
+        <span class="material-icons text-dark me-3">
+            assignment
+            </span>
+            Assignment
+    </a>
+    <a href="#" class="link-dark d-flex fw-bold mb-3">
+        <span class="material-icons text-dark me-3">
+            video_library
+            </span>
+            Course
+    </a>
+    <a href="#" class="link-dark d-flex fw-bold mb-3">
+        <span class="material-icons text-dark me-3">
+            supervisor_account
+            </span>
+            Admin
+    </a>
+    <a href="#" class="link-dark d-flex fw-bold">
+        <span class="material-icons text-dark me-3">
+            settings
+            </span>
+            Settings
+    </a>
 
-    <div class="card" style="width: 18rem">
-      <img src="/week5/assets/cat-0c0689ae.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
+</nav>    
+    <div class="container p-4 ">
+      <div class="row">
+        <div class="title-text d-flex">
+          <h1 class="fs-2">Assignment</h1>
+          <div class="btn-group">
+            <button type="button" class="btn btn-light">All Courses</button>
+            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1</a></li>
+              <li><a class="dropdown-item" href="#">2</a></li>
+              <li><a class="dropdown-item" href="#">3</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="title-icon d-flex">
+
+          
+            <button>
+              <span class="material-icons">
+                search
+                </span>
+            </button>
+            <button>
+              <span class="material-icons">
+                notifications_active
+                </span>
+            </button>
+
+
+        </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
+        </div>
+        <div class="col-12 col-md-8">
+
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+    
+
+    
 
     <!-- Modal 元件 -->
     <div
@@ -54,7 +124,7 @@
       </div>
     </div>
 
-    <footer class="footer">我是 footer</footer>
+      </div>
     
   </body>
 </html>
