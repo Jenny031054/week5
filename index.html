@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/roboto+mono?query=robo">
     <title>index</title>
-    <script type="module" crossorigin src="/week5/assets/main-b2785d22.js"></script>
-    <link rel="stylesheet" href="/week5/assets/main-0ec73ce8.css">
+    <script type="module" crossorigin src="/week5/assets/main-a21f4f50.js"></script>
+    <link rel="stylesheet" href="/week5/assets/main-fc77d772.css">
   </head>
 <body>
 <div class="d-flex">
@@ -71,8 +71,8 @@
       <div class="title-text d-flex">
         <h1 class="fs-2 fw-bold me-50">Assignment</h1>
         <div class="btn-group">
-          <button type="button" class="btn btn-light">All Courses</button>
-          <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <button type="button" class="btn btn-link text-dark fw-bold">All Courses</button>
+          <button type="button" class="btn btn-link text-primary fw-bold dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <span class="visually-hidden">Toggle Dropdown</span>
           </button>
           <ul class="dropdown-menu">
@@ -99,8 +99,11 @@
   <!--All&comments-->
   <div class="d-flex justify-content-between mb-1">
     <div class="btn-group">
-      <button type="button" class="btn btn-light">All (4) </button>
-      <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+      <button type="button" class="btn btn-link text-dark fw-bold">
+          All (4) 
+          </span>
+        </button>
+      <button type="button" class="btn btn--link text-primary fw-bold dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
         <span class="visually-hidden">Toggle Dropdown</span>
       </button>
       <ul class="dropdown-menu">
@@ -113,19 +116,18 @@
   </div>
   <div class="row">
   <!--listGroup-->
-    <div class="col-12 col-md-4">
-      <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action" id="list-1">
+    <div class="col-md-4" role="tabpanel">
+      <div class="list-group" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-1"  role="tab" aria-controls="list-1">
           <div class="d-flex justify-content-between">
             <p class="fs-12">Chapter Assignment 2</p>
             <p class="fs-12">4 hrs ago</p>
           </div>
-          <div class="d-flex justify-content-between align-items-center">
             <p class="fs-5 fw-bold ">Please check this file…</p>
             <p class="fs-12 text-secondary">Emily Wang</p>
-          </div>
+          
         </a>
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action" data-bs-toggle="list" role="tab" href="#list-2"  aria-controls="list-2">
           <div class="d-flex justify-content-between">
             <p class="fs-12">Chapter Assignment 1</p>
             <p class="fs-12">12 hrs ago</p>
@@ -135,7 +137,7 @@
             <p class="fs-12 text-secondary">David Xu</p>
           </div>
         </a>
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action" data-bs-toggle="list" role="tab"  href="#list-3"  aria-controls="list-3">
           <div class="d-flex justify-content-between">
             <p class="fs-12">Final Assignment</p>
             <p class="fs-12">18 hrs ago</p>
@@ -145,7 +147,7 @@
             <p class="fs-12 text-secondary">Tony Wei</p>
           </div>
         </a>
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action" data-bs-toggle="list" role="tab"  href="#list-4"  aria-controls="list-4">
           <div class="d-flex justify-content-between">
             <p class="fs-12">Final Assignment</p>
             <p class="fs-12">19 hrs ago</p>
@@ -155,94 +157,106 @@
             <p class="fs-12 text-secondary">Christina Lin</p>
           </div>
         </a>
-        
       </div>
-
     </div>
       <!--card-->
-    <div class="col-md-8">
-      <div class="card border-gray">
-        <div class="card-header d-flex justify-content-between align-items-center" id="list-1">
-         
-            <div>
-              <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
-              <p class="fw-bold">Please check this file for me, thanks!</p>
-            </div>
-            <span class="material-icons">
-              more_vert
-              </span>
-          </div>       
-        <div class="card-body  d-flex">
-          <div class="d-flex">
-              <div class="flex-shrink-0 me-1">
-              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/emilywang.jpeg?raw=true" alt="emilywang" class="img-fluid photo-stickers rounded-circle">
-            </div>
-          <div class="mb-2 ms-3">
-            <h5 class="card-title fw-bold"> Emily Wang</h5>
-            <p class="text-secondary fs-12">10:38 AM (4 hours ago)</p>
-            <p class="card-text mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="text-primary bg-light">div</code> is bigger than the height of the <code class="text-primary bg-light">img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
-            <a href="#" class="btn btn-primary " download="HW-2-David.zip">HW-2-David.zip</a>
-          </div>
-        </div>
-        </div>
-        
-      <div class="card">  
-        <div class="card-body  d-flex">
-          <div class="d-flex">
-              <div class="flex-shrink-0 me-1">
-              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true" alt="andychen" class="img-fluid photo-stickers rounded-circle">
-            </div>
-          <div class="mb-2 ms-3">
+    <div class="col-md-8 ">
+      <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show card border-buttom-0 active" id="list-1" role="tabpanel" aria-labelledby="list-home-list">
+            <div class="card-header d-flex justify-content-between align-items-center" id="list-1">
 
-            <div class="d-flex justify-content-between">
-              <div>
-                <h5 class="card-title fw-bold">Andy Chen (You)</h5>
-                <p class="text-secondary fs-12">13:24 AM (1 hours ago)</p>
-              </div>
-              <div>
-              <span class="material-icons me-3">
-                star_rate
-                </span>
-                <span class="material-icons">
-                  edit
-                  </span>
+                <div>
+                  <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
+                  <p class="fw-bold">Please check this file for me, thanks!</p>
                 </div>
+                <span class="material-icons">
+                  more_vert
+                  </span>
+              </div>       
+            <div class="card-body  d-flex">
+              <div class="d-flex">
+                  <div class="flex-shrink-0 me-1">
+                  <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/emilywang.jpeg?raw=true" alt="emilywang" class="img-fluid photo-stickers rounded-circle">
+                </div>
+              <div class="mb-2 ms-3 ">
+                <h5 class="card-title fw-bold"> Emily Wang</h5>
+                <p class="text-secondary fs-12">10:38 AM (4 hours ago)</p>
+                <p class="card-text mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="text-primary bg-light">div</code> is bigger than the height of the <code class="text-primary bg-light">img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                <a href="#" class="btn btn-gray-100 text-dark fw-bold border border-gray-400 px-3" download="HW-2-David.zip">
+                  <span class="material-icons me-1">
+                    attach_file
+                    </span>HW-2-David.zip</a>
               </div>
-            <p class="card-text mb-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br> You can: 　
-              <br>
-              • adjust the <code class="text-primary bg-light">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="text-primary bg-light">middle</code> ) or 　
-              <br>
-              • change the <code class="text-primary bg-light">display</code> so it isn’t inline.</p>
+            </div>
+            </div>
             
+          <div class="card border-0">  
+            <div class="card-body  d-flex">
+              <div class="d-flex">
+                  <div class="flex-shrink-0 me-1">
+                  <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true" alt="andychen" class="img-fluid photo-stickers rounded-circle">
+                </div>
+              <div class="mb-2 ms-3 border-top border-gray pt-3">
+
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title fw-bold">Andy Chen (You)</h5>
+                    <p class="text-secondary fs-12">13:24 AM (1 hours ago)</p>
+                  </div>
+                  <div>
+                  <span class="material-icons me-3">
+                    star_rate
+                    </span>
+                    <span class="material-icons">
+                      edit
+                      </span>
+                    </div>
+                  </div>
+                <p class="card-text mb-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br> You can: 　
+                  <br>
+                  • adjust the <code class="text-primary bg-light">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="text-primary bg-light">middle</code> ) or 　
+                  <br>
+                  • change the <code class="text-primary bg-light">display</code> so it isn’t inline.</p>
+                
+              </div>
+            </div>
+            </div>
           </div>
-        </div>
-        </div>
-      </div>
-      </div>
-      
+          </div>
+          <div class="card tab-pane fade" role="tabpanel" aria-labelledby="list-home-list" id="list-2">2</div>
+          <div class="card tab-pane fade" role="tabpanel" aria-labelledby="list-home-list" id="list-3">3</div>
+          <div class="card tab-pane fade" role="tabpanel" aria-labelledby="list-home-list" id="list-4">4</div>
+    </div>
+
 
     </div>
+  </div>
+
     <!--下方的按鈕-->
-    <div class="col mt-3">
-      <div class="d-flex ">
-        <div class="">
-          <a href="#">
+    <div class="col d-flex justify-content-end">
+    <div class="col-8 d-flex justify-content-end mt-3">
+        <ul class="col d-flex pagination" aria-label="Page navigation example">
+          <li class="page-items ">
+          <a href="#" class="page-link border-0">
           <span class="material-icons text-primary">
             chevron_left
             </span>
           </a>
-          <a href="#">
+        </li>
+        <li class="page-items">
+          <a href="#" class="page-link border-0">
             <span class="material-icons text-primary">
               chevron_right
               </span>
           </a>
-        </div>
-        <div class="d-flex ms-auto">
+        </li>
+        </ul>
+        <div class="d-flex align-items-center">
           <div class="button btn btn-outline-primary px-4 py-1 me-3">Mark as read</div>
           <div class="button btn btn-primary px-4 py-1">Reply</div>
-        </div>
-      </div>
+        </div> 
     </div>
+</div>
 
     </div>
   </div>
@@ -256,6 +270,17 @@
 
 
   </div>
+    <script>
+      var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
+triggerTabList.forEach(function (triggerEl) {
+  var tabTrigger = new bootstrap.Tab(triggerEl)
+
+  triggerEl.addEventListener('click', function (event) {
+    event.preventDefault()
+    tabTrigger.show()
+  })
+})
+    </script>
     
   </body>
 </html>
